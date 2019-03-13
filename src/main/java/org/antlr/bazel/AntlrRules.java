@@ -198,7 +198,8 @@ public class AntlrRules
                     {
                         String filename = file.getFileName().toString();
 
-                        if (filename.endsWith(".srcjar"))
+                        if (filename.endsWith(".srcjar")
+                            || filename.endsWith("-ijar.jar"))
                         {
                             return CONTINUE;
                         }
